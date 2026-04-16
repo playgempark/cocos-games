@@ -1,0 +1,22 @@
+System.register("chunks:///_virtual/LevelModels",["./TombCoffin.ts"],(function(){"use strict";return{setters:[null],execute:function(){}}}));
+
+System.register("chunks:///_virtual/TombCoffin.ts",["./rollupPluginModLoBabelHelpers.js","cc","./BasicComponet.ts","./GlobalEnum.ts","./GlobalTmpData.ts","./EventTypes.ts"],(function(t){"use strict";var i,e,o,n,s,r,f,c,a,l,u,h,m,p;return{setters:[function(t){i=t.applyDecoratedDescriptor,e=t.inheritsLoose,o=t.initializerDefineProperty,n=t.assertThisInitialized},function(t){s=t.cclegacy,r=t._decorator,f=t.Node,c=t.v3,a=t.Tween,l=t.tween},function(t){u=t.BasicComponet},function(t){h=t.GlobalEnum},function(t){m=t.GlobalTmpData},function(t){p=t.EventTypes}],execute:function(){var d,P,b,v,y,w,E,C,g,T,D,A,I,M,z;s._RF.push({},"cb5d1px5p1OSa8xKVHUCdWZ","TombCoffin",void 0);var B=r.ccclass,j=r.property;t("TombCoffin",(d=B("TombCoffin"),P=j(f),b=j(f),v=j(f),y=j(f),w=j(f),E=j(f),d((T=i((g=function(t){function i(){for(var i,e=arguments.length,s=new Array(e),r=0;r<e;r++)s[r]=arguments[r];return i=t.call.apply(t,[this].concat(s))||this,o(i,"effects1",T,n(i)),o(i,"effects2",D,n(i)),o(i,"coffin",A,n(i)),o(i,"models",I,n(i)),o(i,"cover",M,n(i)),o(i,"jumpPos",z,n(i)),i.effectId=0,i.animPos1=c(),i.animPos2=c(),i.tmpP=c(),i.cd=.1,i.curt=0,i}e(i,t);var s=i.prototype;return s.onEvents=function(){this.on(p.CurLevelEvents.ShowCombCoffiAnim,this.onShowCombCoffiAnim,this)},s.setData=function(){var t=this;this.models.active=!1,this.effectId=0,this.animPos1.set(0,-10,0),this.animPos2.set(0,0,0),this.models.setPosition(this.animPos1),this.cover.setPosition(this.animPos2),setTimeout((function(){m.PartyInfo.jumpPos.set(t.jumpPos.worldPosition),m.PartyInfo.coffinPos.set(t.coffin.worldPosition)}),0)},s.update=function(t){this.smookEffects1(t),this.smookEffects2(t)},s.moveUpModelsAnim=function(){var t=this;a.stopAllByTarget(this.animPos1),this.effectId=1,this.models.active=!0,l(this.animPos1).to(4,{y:0},{easing:"sineOut",onUpdate:function(){t.models.setPosition(t.animPos1)}}).call((function(){t.coverDownAnim()})).start()},s.coverDownAnim=function(){var t=this;a.stopAllByTarget(this.animPos2),this.effectId=2,l(this.animPos2).to(2,{y:-6},{onUpdate:function(){t.cover.setPosition(t.animPos2)}}).call((function(){t.effectId=0,t.animFinished()})).start()},s.smookEffects1=function(t){if(1==this.effectId&&(this.curt+=t,this.curt>=this.cd)){this.curt=0,this.cd=.1*Math.random()+.1;var i=this.effects1.children[Math.floor(Math.random()*this.effects1.children.length)];this.tmpP.set(i.worldPosition),this.emit(p.EffectEvents.show2DEffect,{t:h.Effect2DType.ZombieBirth,p:this.tmpP})}},s.smookEffects2=function(t){if(2==this.effectId&&(this.curt+=t,this.curt>=this.cd)){this.curt=0,this.cd=.3*Math.random()+.2;var i=this.effects2.children[Math.floor(Math.random()*this.effects2.children.length)];this.tmpP.set(i.worldPosition),this.emit(p.EffectEvents.show2DEffect,{t:h.Effect2DType.ZombieBirth,p:this.tmpP})}},s.animFinished=function(){this.emit(p.CurLevelEvents.CombCoffiAnimFinished)},s.onEnterParty=function(){},s.onShowCombCoffiAnim=function(){this.moveUpModelsAnim()},i}(u)).prototype,"effects1",[P],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),D=i(g.prototype,"effects2",[b],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),A=i(g.prototype,"coffin",[v],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),I=i(g.prototype,"models",[y],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),M=i(g.prototype,"cover",[w],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),z=i(g.prototype,"jumpPos",[E],{configurable:!0,enumerable:!0,writable:!0,initializer:function(){return null}}),C=g))||C));s._RF.pop()}}}));
+
+(function(r) {
+  r('virtual:///prerequisite-imports/LevelModels', 'chunks:///_virtual/LevelModels'); 
+})(function(mid, cid) {
+    System.register(mid, [cid], function (_export, _context) {
+    return {
+        setters: [function(_m) {
+            var _exportObj = {};
+
+            for (var _key in _m) {
+              if (_key !== "default" && _key !== "__esModule") _exportObj[_key] = _m[_key];
+            }
+      
+            _export(_exportObj);
+        }],
+        execute: function () { }
+    };
+    });
+});
