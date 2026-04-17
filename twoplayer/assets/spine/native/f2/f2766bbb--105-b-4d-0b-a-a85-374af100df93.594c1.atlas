@@ -1,0 +1,48 @@
+
+js08.png
+size: 387,184
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: true
+  xy: 172, 75
+  size: 107, 104
+  orig: 107, 104
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 10
+  size: 172, 168
+  orig: 172, 168
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 278, 95
+  size: 107, 87
+  orig: 107, 87
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 172, 8
+  size: 38, 65
+  orig: 38, 65
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: true
+  xy: 278, 2
+  size: 91, 87
+  orig: 91, 87
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 212, 35
+  size: 38, 64
+  orig: 38, 64
+  offset: 0, 0
+  index: -1

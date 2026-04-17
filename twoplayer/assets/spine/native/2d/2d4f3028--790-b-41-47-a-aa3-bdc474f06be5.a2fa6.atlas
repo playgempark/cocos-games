@@ -1,0 +1,48 @@
+
+js09.png
+size: 420,602
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+7-shenti
+  rotate: false
+  xy: 2, 326
+  size: 253, 274
+  orig: 253, 274
+  offset: 0, 0
+  index: -1
+7-tou
+  rotate: false
+  xy: 2, 29
+  size: 211, 295
+  orig: 211, 295
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 257, 383
+  size: 161, 217
+  orig: 161, 217
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 344, 3
+  size: 73, 111
+  orig: 73, 111
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: false
+  xy: 215, 116
+  size: 187, 208
+  orig: 187, 208
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: false
+  xy: 215, 2
+  size: 127, 112
+  orig: 127, 112
+  offset: 0, 0
+  index: -1

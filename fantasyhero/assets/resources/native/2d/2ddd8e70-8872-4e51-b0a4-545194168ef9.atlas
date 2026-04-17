@@ -1,0 +1,55 @@
+
+qidiman.png
+size: 48,156
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 54
+  size: 26, 47
+  orig: 26, 47
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 30, 53
+  size: 15, 48
+  orig: 15, 48
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 2, 4
+  size: 16, 48
+  orig: 16, 48
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 103
+  size: 36, 21
+  orig: 38, 23
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: true
+  xy: 2, 141
+  size: 13, 43
+  orig: 13, 43
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 2, 126
+  size: 13, 43
+  orig: 13, 43
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 20, 2
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

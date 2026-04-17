@@ -1,0 +1,62 @@
+
+tufu.png
+size: 152,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 53, 2
+  size: 43, 26
+  orig: 45, 28
+  offset: 1, 1
+  index: -1
+hand_l
+  rotate: false
+  xy: 126, 38
+  size: 22, 24
+  orig: 22, 24
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 126, 12
+  size: 22, 24
+  orig: 22, 24
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 14
+  size: 49, 48
+  orig: 51, 50
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: false
+  xy: 20, 2
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 2, 2
+  size: 16, 10
+  orig: 16, 10
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: true
+  xy: 53, 30
+  size: 32, 45
+  orig: 34, 47
+  offset: 1, 1
+  index: -1
+yy
+  rotate: true
+  xy: 100, 13
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

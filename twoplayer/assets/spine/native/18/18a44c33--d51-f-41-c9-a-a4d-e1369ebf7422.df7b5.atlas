@@ -1,0 +1,48 @@
+
+zhiyuanbing.png
+size: 297,279
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiang
+  rotate: false
+  xy: 2, 168
+  size: 205, 109
+  orig: 205, 109
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 173, 2
+  size: 119, 115
+  orig: 119, 115
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 4
+  size: 162, 169
+  orig: 162, 169
+  offset: 0, 0
+  index: -1
+yshou
+  rotate: true
+  xy: 209, 218
+  size: 59, 86
+  orig: 59, 86
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 209, 169
+  size: 47, 81
+  orig: 47, 81
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 209, 119
+  size: 48, 76
+  orig: 48, 76
+  offset: 0, 0
+  index: -1

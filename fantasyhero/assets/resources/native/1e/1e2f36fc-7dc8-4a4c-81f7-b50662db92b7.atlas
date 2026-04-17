@@ -1,0 +1,62 @@
+
+shijiachong.png
+size: 160,56
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 67, 19
+  size: 67, 35
+  orig: 67, 35
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 2
+  size: 52, 63
+  orig: 52, 63
+  offset: 0, 0
+  index: -1
+leg_01
+  rotate: false
+  xy: 136, 34
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+leg_back
+  rotate: false
+  xy: 136, 34
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+leg_02
+  rotate: true
+  xy: 118, 5
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: -1
+leg_03
+  rotate: false
+  xy: 136, 19
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+leg_04
+  rotate: false
+  xy: 135, 5
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 67, 5
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+js01.png
+size: 171,292
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1-tou
+  rotate: true
+  xy: 2, 159
+  size: 131, 167
+  orig: 131, 167
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 60
+  size: 96, 97
+  orig: 96, 97
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 2, 2
+  size: 85, 56
+  orig: 85, 56
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 100, 83
+  size: 35, 65
+  orig: 35, 65
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: false
+  xy: 89, 16
+  size: 68, 42
+  orig: 68, 42
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 100, 120
+  size: 37, 64
+  orig: 37, 64
+  offset: 0, 0
+  index: -1

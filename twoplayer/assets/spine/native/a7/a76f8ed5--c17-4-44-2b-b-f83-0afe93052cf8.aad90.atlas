@@ -1,0 +1,48 @@
+
+jujibing.png
+size: 552,176
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiang
+  rotate: false
+  xy: 2, 53
+  size: 245, 121
+  orig: 245, 121
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 416, 34
+  size: 140, 134
+  orig: 140, 134
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 249, 8
+  size: 166, 165
+  orig: 166, 165
+  offset: 0, 0
+  index: -1
+yshou
+  rotate: true
+  xy: 2, 4
+  size: 47, 91
+  orig: 47, 91
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 95, 2
+  size: 49, 67
+  orig: 49, 67
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 164, 2
+  size: 49, 65
+  orig: 49, 65
+  offset: 0, 0
+  index: -1

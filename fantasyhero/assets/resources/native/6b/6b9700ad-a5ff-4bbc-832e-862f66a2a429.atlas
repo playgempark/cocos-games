@@ -1,0 +1,76 @@
+
+zhenwulonghun.png
+size: 216,88
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 2, 23
+  size: 58, 62
+  orig: 58, 62
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 172, 45
+  size: 42, 40
+  orig: 44, 42
+  offset: 1, 1
+  index: -1
+leg_01
+  rotate: true
+  xy: 37, 3
+  size: 18, 31
+  orig: 18, 31
+  offset: 0, 0
+  index: -1
+leg_02
+  rotate: true
+  xy: 2, 4
+  size: 17, 33
+  orig: 17, 33
+  offset: 0, 0
+  index: -1
+leg_back_01
+  rotate: true
+  xy: 121, 8
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+leg_back_02
+  rotate: true
+  xy: 150, 10
+  size: 17, 27
+  orig: 17, 27
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 179, 2
+  size: 32, 41
+  orig: 32, 41
+  offset: 0, 0
+  index: -1
+wing
+  rotate: false
+  xy: 119, 29
+  size: 51, 56
+  orig: 51, 56
+  offset: 0, 0
+  index: -1
+wing_back
+  rotate: true
+  xy: 62, 28
+  size: 57, 55
+  orig: 57, 55
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 70, 2
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

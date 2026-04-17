@@ -1,0 +1,104 @@
+
+guojing.png
+size: 126,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 63, 42
+  size: 40, 32
+  orig: 40, 32
+  offset: 0, 0
+  index: -1
+clothes2
+  rotate: false
+  xy: 57, 8
+  size: 40, 32
+  orig: 40, 32
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 2, 22
+  size: 53, 41
+  orig: 53, 41
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 105, 39
+  size: 21, 12
+  orig: 21, 12
+  offset: 0, 0
+  index: -1
+hand_l2
+  rotate: false
+  xy: 105, 62
+  size: 19, 12
+  orig: 19, 12
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 99, 16
+  size: 21, 12
+  orig: 21, 12
+  offset: 0, 0
+  index: -1
+hand_r2
+  rotate: false
+  xy: 99, 2
+  size: 20, 12
+  orig: 20, 12
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 63, 76
+  size: 58, 63
+  orig: 58, 63
+  offset: 0, 0
+  index: -1
+head2
+  rotate: false
+  xy: 2, 65
+  size: 59, 74
+  orig: 59, 74
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: true
+  xy: 57, 55
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+leg_l2
+  rotate: false
+  xy: 2, 3
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 119, 52
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+leg_r2
+  rotate: true
+  xy: 113, 29
+  size: 8, 3
+  orig: 8, 3
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 8
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

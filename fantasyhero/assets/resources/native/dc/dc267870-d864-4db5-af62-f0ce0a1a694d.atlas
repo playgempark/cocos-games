@@ -1,0 +1,83 @@
+
+jifa.png
+size: 237,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 134, 23
+  size: 50, 31
+  orig: 50, 31
+  offset: 0, 0
+  index: -1
+clothes2
+  rotate: false
+  xy: 186, 18
+  size: 49, 31
+  orig: 49, 31
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 2, 2
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+hand_l2
+  rotate: false
+  xy: 211, 51
+  size: 24, 25
+  orig: 24, 25
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 68, 2
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+hand_r2
+  rotate: true
+  xy: 28, 2
+  size: 23, 24
+  orig: 23, 24
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 68, 28
+  size: 48, 64
+  orig: 48, 64
+  offset: 0, 0
+  index: -1
+head2
+  rotate: true
+  xy: 2, 27
+  size: 49, 64
+  orig: 49, 64
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: true
+  xy: 134, 56
+  size: 20, 75
+  orig: 20, 75
+  offset: 0, 0
+  index: -1
+weapon2
+  rotate: true
+  xy: 94, 2
+  size: 19, 75
+  orig: 19, 75
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 171, 4
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

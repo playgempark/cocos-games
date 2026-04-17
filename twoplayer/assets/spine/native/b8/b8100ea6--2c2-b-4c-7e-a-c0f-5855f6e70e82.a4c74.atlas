@@ -1,0 +1,55 @@
+
+js05.png
+size: 123,558
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mao
+  rotate: true
+  xy: 2, 2
+  size: 158, 109
+  orig: 158, 109
+  offset: 0, 0
+  index: -1
+qiang
+  rotate: false
+  xy: 2, 412
+  size: 117, 69
+  orig: 117, 69
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 2, 316
+  size: 94, 99
+  orig: 94, 99
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 162
+  size: 119, 152
+  orig: 119, 152
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: true
+  xy: 2, 483
+  size: 42, 73
+  orig: 42, 73
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 2, 527
+  size: 29, 58
+  orig: 29, 58
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 62, 527
+  size: 29, 59
+  orig: 29, 59
+  offset: 0, 0
+  index: -1

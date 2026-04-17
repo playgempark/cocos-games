@@ -1,0 +1,48 @@
+
+coinguai.png
+size: 80,112
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coin
+  rotate: true
+  xy: 2, 2
+  size: 63, 64
+  orig: 63, 64
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 56, 93
+  size: 19, 16
+  orig: 21, 18
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: true
+  xy: 2, 78
+  size: 17, 19
+  orig: 19, 21
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: true
+  xy: 29, 96
+  size: 13, 25
+  orig: 13, 25
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 2, 97
+  size: 12, 25
+  orig: 12, 25
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 23, 67
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

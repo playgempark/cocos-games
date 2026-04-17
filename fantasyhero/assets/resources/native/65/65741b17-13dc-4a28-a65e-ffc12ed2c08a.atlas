@@ -1,0 +1,62 @@
+
+langren.png
+size: 121,76
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 58, 38
+  size: 35, 36
+  orig: 35, 36
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 95, 46
+  size: 22, 28
+  orig: 22, 28
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 97, 17
+  size: 22, 27
+  orig: 22, 27
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 17
+  size: 54, 57
+  orig: 54, 57
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: true
+  xy: 53, 2
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 53, 2
+  size: 13, 12
+  orig: 13, 12
+  offset: 0, 0
+  index: -1
+tail
+  rotate: true
+  xy: 67, 2
+  size: 34, 28
+  orig: 34, 28
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 3
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

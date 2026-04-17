@@ -1,0 +1,55 @@
+
+pipajing.png
+size: 88,140
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 52, 38
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: false
+  xy: 2, 31
+  size: 48, 42
+  orig: 48, 42
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 43, 5
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 64, 12
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 75
+  size: 70, 63
+  orig: 70, 63
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: true
+  xy: 2, 2
+  size: 27, 39
+  orig: 27, 39
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 74, 89
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,55 @@
+
+nvwa.png
+size: 102,108
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 66, 56
+  size: 50, 32
+  orig: 50, 32
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: true
+  xy: 2, 51
+  size: 55, 62
+  orig: 55, 62
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 80, 18
+  size: 19, 17
+  orig: 19, 17
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 80, 37
+  size: 20, 17
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 2
+  size: 47, 59
+  orig: 47, 59
+  offset: 0, 0
+  index: -1
+r1
+  rotate: true
+  xy: 80, 2
+  size: 14, 18
+  orig: 14, 19
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 66, 5
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

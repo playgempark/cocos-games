@@ -1,0 +1,48 @@
+
+tongtian.png
+size: 128,72
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 97, 25
+  size: 42, 29
+  orig: 42, 29
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 74, 16
+  size: 18, 15
+  orig: 20, 17
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: false
+  xy: 55, 14
+  size: 17, 17
+  orig: 19, 19
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 2, 4
+  size: 51, 63
+  orig: 53, 65
+  offset: 1, 1
+  index: -1
+weapon
+  rotate: true
+  xy: 55, 33
+  size: 34, 40
+  orig: 34, 40
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 74, 2
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

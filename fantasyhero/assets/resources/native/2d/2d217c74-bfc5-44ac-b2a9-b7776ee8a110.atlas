@@ -1,0 +1,83 @@
+
+huangrong.png
+size: 188,80
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 147, 37
+  size: 35, 40
+  orig: 37, 42
+  offset: 1, 1
+  index: -1
+hair_back
+  rotate: false
+  xy: 70, 32
+  size: 54, 45
+  orig: 54, 46
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 121, 2
+  size: 22, 15
+  orig: 24, 17
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: true
+  xy: 145, 3
+  size: 14, 20
+  orig: 16, 22
+  offset: 1, 1
+  index: -1
+head
+  rotate: true
+  xy: 2, 13
+  size: 64, 66
+  orig: 66, 68
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: true
+  xy: 147, 27
+  size: 8, 13
+  orig: 10, 15
+  offset: 1, 1
+  index: -1
+leg_r
+  rotate: true
+  xy: 102, 7
+  size: 9, 15
+  orig: 11, 17
+  offset: 1, 1
+  index: -1
+piao1
+  rotate: false
+  xy: 167, 2
+  size: 17, 33
+  orig: 17, 34
+  offset: 0, 0
+  index: -1
+piao2
+  rotate: true
+  xy: 70, 3
+  size: 13, 30
+  orig: 13, 31
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 126, 19
+  size: 19, 58
+  orig: 21, 60
+  offset: 1, 1
+  index: -1
+yy
+  rotate: false
+  xy: 70, 18
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

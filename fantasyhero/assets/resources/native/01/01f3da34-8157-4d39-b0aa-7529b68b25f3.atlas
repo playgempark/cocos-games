@@ -1,0 +1,69 @@
+
+hongjun.png
+size: 140,141
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 2, 2
+  size: 50, 38
+  orig: 50, 38
+  offset: 0, 0
+  index: -1
+hair_back
+  rotate: true
+  xy: 83, 10
+  size: 57, 55
+  orig: 57, 55
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 56, 27
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 56, 5
+  size: 20, 25
+  orig: 20, 25
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 76, 69
+  size: 61, 70
+  orig: 61, 70
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: false
+  xy: 83, 3
+  size: 12, 5
+  orig: 12, 5
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 76, 54
+  size: 13, 5
+  orig: 13, 5
+  offset: 0, 0
+  index: -1
+light
+  rotate: true
+  xy: 2, 54
+  size: 85, 72
+  orig: 85, 73
+  offset: 0, 1
+  index: -1
+yy
+  rotate: true
+  xy: 42, 3
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

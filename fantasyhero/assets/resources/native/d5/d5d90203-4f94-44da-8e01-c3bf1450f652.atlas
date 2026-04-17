@@ -1,0 +1,104 @@
+
+dixuezhizhu.png
+size: 160,80
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 2, 2
+  size: 21, 23
+  orig: 23, 25
+  offset: 1, 1
+  index: -1
+hair_back
+  rotate: true
+  xy: 107, 39
+  size: 39, 32
+  orig: 39, 32
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 141, 55
+  size: 17, 10
+  orig: 19, 12
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: false
+  xy: 141, 43
+  size: 17, 10
+  orig: 19, 12
+  offset: 1, 1
+  index: -1
+head
+  rotate: true
+  xy: 43, 27
+  size: 51, 36
+  orig: 53, 38
+  offset: 1, 1
+  index: -1
+leg_01
+  rotate: false
+  xy: 141, 23
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+leg_02
+  rotate: true
+  xy: 141, 67
+  size: 11, 17
+  orig: 11, 17
+  offset: 0, 0
+  index: -1
+leg_03
+  rotate: false
+  xy: 48, 2
+  size: 12, 23
+  orig: 12, 23
+  offset: 0, 0
+  index: -1
+leg_04
+  rotate: false
+  xy: 91, 2
+  size: 16, 25
+  orig: 16, 25
+  offset: 0, 0
+  index: -1
+leg_05
+  rotate: false
+  xy: 27, 2
+  size: 19, 21
+  orig: 19, 21
+  offset: 0, 0
+  index: -1
+leg_back
+  rotate: true
+  xy: 62, 7
+  size: 18, 27
+  orig: 18, 27
+  offset: 0, 0
+  index: -1
+spiderbody_01
+  rotate: true
+  xy: 109, 5
+  size: 32, 30
+  orig: 34, 32
+  offset: 1, 1
+  index: -1
+spiderbody_02
+  rotate: true
+  xy: 2, 25
+  size: 53, 39
+  orig: 53, 39
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 81, 29
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

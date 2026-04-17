@@ -1,0 +1,48 @@
+
+sishen.png
+size: 236,56
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 132, 5
+  size: 46, 41
+  orig: 46, 41
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 201, 3
+  size: 23, 31
+  orig: 23, 31
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 201, 28
+  size: 23, 32
+  orig: 23, 32
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 5
+  size: 65, 46
+  orig: 67, 48
+  offset: 1, 1
+  index: -1
+weapon
+  rotate: false
+  xy: 69, 7
+  size: 61, 44
+  orig: 63, 46
+  offset: 1, 1
+  index: -1
+yy
+  rotate: true
+  xy: 175, 2
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

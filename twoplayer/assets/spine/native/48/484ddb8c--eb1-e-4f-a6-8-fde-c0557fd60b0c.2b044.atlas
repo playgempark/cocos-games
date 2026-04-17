@@ -1,0 +1,41 @@
+
+tujibing.png
+size: 286,298
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiang
+  rotate: false
+  xy: 2, 2
+  size: 233, 114
+  orig: 233, 114
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 165, 175
+  size: 119, 121
+  orig: 119, 121
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 118
+  size: 161, 178
+  orig: 161, 178
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 165, 125
+  size: 48, 80
+  orig: 48, 80
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: false
+  xy: 237, 49
+  size: 47, 74
+  orig: 47, 74
+  offset: 0, 0
+  index: -1

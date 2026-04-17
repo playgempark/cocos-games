@@ -1,0 +1,97 @@
+
+gebulin.png
+size: 224,48
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 135, 9
+  size: 37, 28
+  orig: 39, 30
+  offset: 1, 1
+  index: -1
+coin_01
+  rotate: false
+  xy: 154, 3
+  size: 7, 4
+  orig: 9, 6
+  offset: 1, 1
+  index: -1
+coin_02
+  rotate: false
+  xy: 214, 13
+  size: 7, 7
+  orig: 9, 9
+  offset: 1, 1
+  index: -1
+coin_03
+  rotate: false
+  xy: 145, 2
+  size: 7, 5
+  orig: 9, 7
+  offset: 1, 1
+  index: -1
+coin_04
+  rotate: false
+  xy: 135, 2
+  size: 8, 5
+  orig: 10, 7
+  offset: 1, 1
+  index: -1
+coin_05
+  rotate: false
+  xy: 214, 4
+  size: 6, 7
+  orig: 8, 9
+  offset: 1, 1
+  index: -1
+hand_l
+  rotate: true
+  xy: 179, 4
+  size: 16, 9
+  orig: 18, 11
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: true
+  xy: 190, 4
+  size: 16, 9
+  orig: 18, 11
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 2, 5
+  size: 62, 41
+  orig: 64, 43
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: true
+  xy: 201, 5
+  size: 15, 11
+  orig: 15, 11
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 165, 3
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+pocket
+  rotate: false
+  xy: 66, 6
+  size: 67, 40
+  orig: 67, 40
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 165, 22
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,48 @@
+
+js03.png
+size: 157,372
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gebo
+  rotate: false
+  xy: 101, 92
+  size: 50, 66
+  orig: 50, 66
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 2, 61
+  size: 97, 97
+  orig: 97, 97
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 228
+  size: 142, 153
+  orig: 142, 153
+  offset: 0, 0
+  index: -1
+wuqi
+  rotate: false
+  xy: 2, 160
+  size: 148, 66
+  orig: 148, 66
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 101, 28
+  size: 53, 62
+  orig: 53, 62
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: false
+  xy: 2, 2
+  size: 62, 57
+  orig: 62, 57
+  offset: 0, 0
+  index: -1

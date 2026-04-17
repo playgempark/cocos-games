@@ -1,0 +1,48 @@
+
+liudanbing.png
+size: 294,307
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qiang
+  rotate: true
+  xy: 2, 94
+  size: 211, 104
+  orig: 211, 104
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 132, 2
+  size: 119, 113
+  orig: 119, 113
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 108, 123
+  size: 151, 182
+  orig: 151, 182
+  offset: 0, 0
+  index: -1
+yshou
+  rotate: false
+  xy: 2, 11
+  size: 79, 81
+  orig: 79, 81
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 83, 14
+  size: 47, 78
+  orig: 47, 78
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: false
+  xy: 247, 44
+  size: 45, 77
+  orig: 45, 77
+  offset: 0, 0
+  index: -1

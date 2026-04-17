@@ -1,0 +1,62 @@
+
+wushi.png
+size: 119,78
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 86, 35
+  size: 41, 31
+  orig: 41, 31
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 105, 18
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 86, 18
+  size: 17, 15
+  orig: 17, 15
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 29, 18
+  size: 58, 55
+  orig: 58, 55
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: false
+  xy: 98, 7
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 80, 7
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 2, 2
+  size: 25, 74
+  orig: 25, 74
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 29, 4
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,48 @@
+
+js10.png
+size: 990,246
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shenti
+  rotate: false
+  xy: 295, 8
+  size: 256, 236
+  orig: 256, 236
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 2
+  size: 242, 291
+  orig: 242, 291
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 553, 11
+  size: 178, 233
+  orig: 178, 233
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 911, 123
+  size: 77, 121
+  orig: 77, 121
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: false
+  xy: 733, 22
+  size: 176, 222
+  orig: 176, 222
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: false
+  xy: 911, 2
+  size: 73, 119
+  orig: 73, 119
+  offset: 0, 0
+  index: -1

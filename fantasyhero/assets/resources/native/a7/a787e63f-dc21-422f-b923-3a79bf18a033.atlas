@@ -1,0 +1,97 @@
+
+huximei.png
+size: 143,197
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes1
+  rotate: false
+  xy: 2, 2
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+clothes2
+  rotate: false
+  xy: 37, 2
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1
+hair2
+  rotate: true
+  xy: 2, 138
+  size: 57, 75
+  orig: 57, 75
+  offset: 0, 0
+  index: -1
+hair_back1
+  rotate: true
+  xy: 2, 104
+  size: 32, 75
+  orig: 32, 75
+  offset: 0, 0
+  index: -1
+hair_back2
+  rotate: true
+  xy: 79, 18
+  size: 50, 57
+  orig: 50, 57
+  offset: 0, 0
+  index: -1
+hand_l1
+  rotate: true
+  xy: 61, 37
+  size: 23, 13
+  orig: 23, 13
+  offset: 0, 0
+  index: -1
+hand_l2
+  rotate: false
+  xy: 72, 3
+  size: 22, 13
+  orig: 22, 13
+  offset: 0, 0
+  index: -1
+hand_r1
+  rotate: true
+  xy: 61, 83
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+hand_r2
+  rotate: true
+  xy: 61, 62
+  size: 19, 16
+  orig: 19, 16
+  offset: 0, 0
+  index: -1
+head1
+  rotate: true
+  xy: 2, 51
+  size: 51, 57
+  orig: 51, 57
+  offset: 0, 0
+  index: -1
+weapon1
+  rotate: false
+  xy: 79, 133
+  size: 62, 62
+  orig: 62, 62
+  offset: 0, 0
+  index: -1
+weapon2
+  rotate: true
+  xy: 79, 70
+  size: 61, 62
+  orig: 61, 62
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 37
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

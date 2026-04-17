@@ -1,0 +1,55 @@
+
+wenyiyisheng.png
+size: 139,71
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 69, 25
+  size: 43, 30
+  orig: 43, 30
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 99, 2
+  size: 21, 13
+  orig: 21, 13
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 114, 19
+  size: 22, 12
+  orig: 22, 12
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 6
+  size: 65, 63
+  orig: 65, 63
+  offset: 0, 0
+  index: -1
+weapon_01'
+  rotate: true
+  xy: 69, 8
+  size: 15, 28
+  orig: 15, 28
+  offset: 0, 0
+  index: -1
+weapon_02
+  rotate: false
+  xy: 120, 33
+  size: 17, 36
+  orig: 17, 36
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 69, 57
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

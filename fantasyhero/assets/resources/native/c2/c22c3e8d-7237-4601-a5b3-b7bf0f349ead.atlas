@@ -1,0 +1,62 @@
+
+taitan.png
+size: 68,228
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+acce_back
+  rotate: false
+  xy: 2, 181
+  size: 64, 45
+  orig: 66, 47
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 2, 126
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+han_r
+  rotate: false
+  xy: 2, 67
+  size: 31, 57
+  orig: 31, 57
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 35, 67
+  size: 31, 57
+  orig: 31, 57
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 21
+  size: 38, 44
+  orig: 40, 46
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: false
+  xy: 2, 2
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 22, 2
+  size: 18, 17
+  orig: 18, 17
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 42, 16
+  size: 49, 24
+  orig: 51, 26
+  offset: 1, 1
+  index: -1

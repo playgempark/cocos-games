@@ -1,0 +1,55 @@
+
+yingnv.png
+size: 135,73
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 63, 2
+  size: 35, 29
+  orig: 35, 29
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 63, 33
+  size: 38, 27
+  orig: 38, 27
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 92, 34
+  size: 37, 27
+  orig: 37, 27
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 5
+  size: 66, 59
+  orig: 66, 59
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: false
+  xy: 116, 6
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 100, 21
+  size: 11, 14
+  orig: 11, 14
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 121, 22
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

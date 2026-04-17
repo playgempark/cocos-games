@@ -1,0 +1,55 @@
+
+yiliaobing.png
+size: 539,184
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+beibao
+  rotate: false
+  xy: 319, 73
+  size: 133, 109
+  orig: 133, 109
+  offset: 0, 0
+  index: -1
+qiang
+  rotate: true
+  xy: 454, 63
+  size: 119, 83
+  orig: 119, 83
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 198, 50
+  size: 132, 119
+  orig: 132, 119
+  offset: 0, 0
+  index: -1
+tou
+  rotate: true
+  xy: 2, 2
+  size: 180, 194
+  orig: 180, 194
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 345, 6
+  size: 101, 65
+  orig: 101, 65
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: true
+  xy: 198, 2
+  size: 46, 74
+  orig: 46, 74
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 274, 3
+  size: 45, 69
+  orig: 45, 69
+  offset: 0, 0
+  index: -1

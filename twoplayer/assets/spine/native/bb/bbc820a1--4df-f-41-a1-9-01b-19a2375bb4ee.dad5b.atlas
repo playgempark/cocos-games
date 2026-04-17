@@ -1,0 +1,62 @@
+
+js06.png
+size: 269,285
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dun
+  rotate: true
+  xy: 2, 2
+  size: 111, 155
+  orig: 111, 155
+  offset: 0, 0
+  index: -1
+fuzi
+  rotate: true
+  xy: 138, 144
+  size: 139, 65
+  orig: 139, 65
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: true
+  xy: 159, 49
+  size: 93, 85
+  orig: 93, 85
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 115
+  size: 134, 168
+  orig: 134, 168
+  offset: 0, 0
+  index: -1
+ybi
+  rotate: false
+  xy: 159, 5
+  size: 70, 42
+  orig: 70, 42
+  offset: 0, 0
+  index: -1
+yttui
+  rotate: true
+  xy: 205, 179
+  size: 29, 55
+  orig: 29, 55
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: false
+  xy: 205, 210
+  size: 62, 73
+  orig: 62, 73
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 205, 148
+  size: 29, 55
+  orig: 29, 55
+  offset: 0, 0
+  index: -1

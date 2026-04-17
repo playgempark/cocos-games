@@ -1,0 +1,62 @@
+
+mohuasengren.png
+size: 101,77
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: false
+  xy: 2, 2
+  size: 34, 28
+  orig: 34, 28
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 70, 6
+  size: 22, 14
+  orig: 22, 14
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 48, 11
+  size: 17, 20
+  orig: 17, 20
+  offset: 0, 0
+  index: -1
+head
+  rotate: true
+  xy: 2, 32
+  size: 43, 45
+  orig: 43, 45
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: true
+  xy: 38, 18
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: true
+  xy: 38, 4
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 49, 30
+  size: 36, 45
+  orig: 36, 45
+  offset: 0, 0
+  index: -1
+yy
+  rotate: true
+  xy: 87, 26
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

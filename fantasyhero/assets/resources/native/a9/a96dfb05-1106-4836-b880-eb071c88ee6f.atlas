@@ -1,0 +1,118 @@
+
+pangu.png
+size: 420,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BACK/B_clothes
+  rotate: false
+  xy: 290, 29
+  size: 45, 33
+  orig: 47, 35
+  offset: 1, 1
+  index: -1
+BACK/B_hair
+  rotate: true
+  xy: 2, 4
+  size: 58, 55
+  orig: 58, 58
+  offset: 0, 0
+  index: -1
+BACK/B_hair_back
+  rotate: true
+  xy: 59, 2
+  size: 60, 53
+  orig: 60, 53
+  offset: 0, 0
+  index: -1
+BACK/B_hand_l
+  rotate: true
+  xy: 244, 3
+  size: 24, 33
+  orig: 26, 35
+  offset: 1, 1
+  index: -1
+BACK/B_hand_r
+  rotate: true
+  xy: 279, 3
+  size: 24, 33
+  orig: 26, 35
+  offset: 1, 1
+  index: -1
+BACK/B_leg_l
+  rotate: true
+  xy: 220, 9
+  size: 14, 10
+  orig: 16, 12
+  offset: 1, 1
+  index: -1
+BACK/B_leg_r
+  rotate: false
+  xy: 188, 2
+  size: 16, 7
+  orig: 18, 9
+  offset: 1, 1
+  index: -1
+clothes
+  rotate: false
+  xy: 242, 29
+  size: 46, 33
+  orig: 48, 35
+  offset: 1, 1
+  index: -1
+hair_back
+  rotate: true
+  xy: 337, 4
+  size: 58, 41
+  orig: 58, 42
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 380, 33
+  size: 29, 35
+  orig: 31, 37
+  offset: 1, 1
+  index: -1
+hand_r
+  rotate: true
+  xy: 380, 2
+  size: 29, 35
+  orig: 31, 37
+  offset: 1, 1
+  index: -1
+head
+  rotate: true
+  xy: 114, 5
+  size: 57, 53
+  orig: 59, 55
+  offset: 1, 1
+  index: -1
+leg_l
+  rotate: true
+  xy: 232, 10
+  size: 13, 10
+  orig: 15, 12
+  offset: 1, 1
+  index: -1
+leg_r
+  rotate: false
+  xy: 169, 2
+  size: 17, 7
+  orig: 19, 9
+  offset: 1, 1
+  index: -1
+weapon
+  rotate: true
+  xy: 169, 25
+  size: 37, 71
+  orig: 39, 73
+  offset: 1, 1
+  index: -1
+yy
+  rotate: false
+  xy: 169, 11
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1

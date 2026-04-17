@@ -1,0 +1,48 @@
+
+js02.png
+size: 133,458
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2-shenti
+  rotate: false
+  xy: 2, 181
+  size: 128, 118
+  orig: 128, 118
+  offset: 0, 0
+  index: -1
+2-ybi
+  rotate: true
+  xy: 2, 47
+  size: 59, 102
+  orig: 59, 102
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 301
+  size: 128, 155
+  orig: 128, 155
+  offset: 0, 0
+  index: -1
+ytui
+  rotate: false
+  xy: 90, 112
+  size: 41, 67
+  orig: 41, 67
+  offset: 0, 0
+  index: -1
+zbi
+  rotate: true
+  xy: 2, 108
+  size: 71, 86
+  orig: 71, 86
+  offset: 0, 0
+  index: -1
+ztui
+  rotate: true
+  xy: 2, 2
+  size: 43, 66
+  orig: 43, 66
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,62 @@
+
+kulouguai.png
+size: 125,73
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+clothes
+  rotate: true
+  xy: 92, 30
+  size: 41, 31
+  orig: 41, 31
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 92, 2
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 102, 4
+  size: 15, 8
+  orig: 15, 8
+  offset: 0, 0
+  index: -1
+head
+  rotate: false
+  xy: 2, 16
+  size: 55, 55
+  orig: 55, 55
+  offset: 0, 0
+  index: -1
+leg_l
+  rotate: true
+  xy: 109, 14
+  size: 14, 10
+  orig: 14, 10
+  offset: 0, 0
+  index: -1
+leg_r
+  rotate: false
+  xy: 92, 19
+  size: 15, 9
+  orig: 15, 9
+  offset: 0, 0
+  index: -1
+weapon
+  rotate: false
+  xy: 59, 5
+  size: 31, 66
+  orig: 31, 66
+  offset: 0, 0
+  index: -1
+yy
+  rotate: false
+  xy: 2, 2
+  size: 49, 12
+  orig: 49, 12
+  offset: 0, 0
+  index: -1
