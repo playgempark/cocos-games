@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><script>
+  // Auto-frame in mobile-portrait wrapper on desktop. Inserted by deploy tooling.
+  (function(){
+    if (window.self !== window.top) return; // already inside wrapper
+    if (!window.matchMedia('(min-width: 720px)').matches) return; // mobile: skip
+    var path = location.pathname.replace(/\/(?:index\.html?)?$/, '');
+    var m = path.match(/\/([^\/]+)$/);
+    if (!m) return;
+    location.replace('../play.html?g=' + encodeURIComponent(m[1]));
+  })();
+</script>
+
   <meta charset="utf-8">
 
   <title>Cocos Creator | wxshootGame</title>
