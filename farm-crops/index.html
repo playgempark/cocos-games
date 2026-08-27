@@ -571,20 +571,53 @@
       <h3>Plant_PrimeGrape <span class="badge">1 종 · 12 스프라이트</span></h3>
       <div class="request-grid">
         <div>
-          <div class="row-label">컨셉</div>
+          <div class="row-label">컨셉 확정</div>
           <ul class="concept-list">
-            <li><strong>포지션</strong> — 고레벨(LV 80~99) 경험치 열매 시리즈의 대표 (프라임 그레이프 · 엘리트 망고 · 솔리드 피치).</li>
-            <li><strong>비주얼</strong> — 저·중LV보다 확실히 <strong>화려하고 풍성한 클러스터</strong> 느낌. 등급감·희귀도가 시각적으로 드러날 것.</li>
-            <li><strong>등급 표현</strong> — Magic / Rare / Hero 세 등급을 색상만으로 구분 (형태는 동일). 색상은 아래 컨벤션 참고.</li>
-            <li><strong>스타일 매칭</strong> — 기존 4종과 동일한 pixel-art / cel-shaded 톤. 크기·앵커도 기존 스프라이트 기준.</li>
+            <li><strong>포지션</strong> — 고레벨(LV 80~99) 경험치 열매 시리즈의 대표. 유저가 게임 후반부에 심는 <strong>최상급 열매</strong>. 저·중LV 대비 확실한 등급감 필요.</li>
+            <li><strong>실루엣</strong> — <strong>큼직한 포도 클러스터</strong> (7~9알). 알갱이는 통통·둥글며 하이라이트 스팟 뚜렷. 상단에 초록 잎사귀 2~3장 + 얇은 덩굴/스템.</li>
+            <li><strong>왕관 요소</strong> — 클러스터 상단 잎에 <strong>얇은 금색 링/왕관 hint</strong>. 부담스럽지 않게, 프리미엄 표식 정도.</li>
+            <li><strong>아우라</strong> — 열매 뒤 은은한 방사형 광채(soft radial glow). 알갱이 몇 개에 별표 하이라이트(sparkle) 1~2개.</li>
+            <li><strong>스타일 매칭</strong> — 기존 4종과 동일한 cel-shaded, 굵은 외곽선, 채도 높은 색상. 텍스처 minimal.</li>
           </ul>
 
-          <div class="row-label" style="margin-top:16px;">등급-색상 컨벤션 (권장)</div>
-          <div class="legend">
-            <div class="item"><span class="dot" style="background:var(--acc-blue)"></span>Magic — 파랑 톤</div>
-            <div class="item"><span class="dot" style="background:var(--acc-purple)"></span>Rare — 보라 톤</div>
-            <div class="item"><span class="dot" style="background:var(--acc-orange)"></span>Hero — 주황/금 톤</div>
-          </div>
+          <div class="row-label" style="margin-top:20px;">등급별 컬러 스펙 (정확 값 지정)</div>
+          <table style="width:100%; border-collapse:collapse; font-size:13px; margin-top:6px;">
+            <thead>
+              <tr>
+                <th style="text-align:left; padding:6px 8px; color:var(--text-mute); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; border-bottom:1px solid var(--border-soft);">등급</th>
+                <th style="text-align:left; padding:6px 8px; color:var(--text-mute); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; border-bottom:1px solid var(--border-soft);">대응 열매</th>
+                <th style="text-align:left; padding:6px 8px; color:var(--text-mute); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; border-bottom:1px solid var(--border-soft);">알갱이</th>
+                <th style="text-align:left; padding:6px 8px; color:var(--text-mute); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; border-bottom:1px solid var(--border-soft);">글로우</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:8px;"><span class="grade g-magic">Magic</span></td>
+                <td style="padding:8px;">프라임 그레이프</td>
+                <td style="padding:8px;"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#3b6ee0;vertical-align:middle;margin-right:4px;"></span> 딥 사파이어 <span class="code-inline">#3B6EE0</span> → <span class="code-inline">#79A9FF</span></td>
+                <td style="padding:8px;"><span class="code-inline">#8CB9FF</span> 은은</td>
+              </tr>
+              <tr>
+                <td style="padding:8px;"><span class="grade g-rare">Rare</span></td>
+                <td style="padding:8px;">엘리트 망고</td>
+                <td style="padding:8px;"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#8b4bd6;vertical-align:middle;margin-right:4px;"></span> 자수정 <span class="code-inline">#8B4BD6</span> → <span class="code-inline">#C79BF5</span></td>
+                <td style="padding:8px;"><span class="code-inline">#D6B5FF</span> 중간</td>
+              </tr>
+              <tr>
+                <td style="padding:8px;"><span class="grade g-hero">Hero</span></td>
+                <td style="padding:8px;">솔리드 피치</td>
+                <td style="padding:8px;"><span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e69832;vertical-align:middle;margin-right:4px;"></span> 골든/앰버 <span class="code-inline">#E69832</span> → <span class="code-inline">#FFD570</span></td>
+                <td style="padding:8px;"><span class="code-inline">#FFDFA0</span> 강함</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="row-label" style="margin-top:20px;">성장 단계별 형태</div>
+          <ul class="concept-list">
+            <li><strong>1 SEED</strong> — 흙 위 파릇한 새싹 (잎 2장), 아직 열매 없음. 등급 색은 잎 끝 팁에만 살짝. 실루엣 높이: MATURE의 <strong>30%</strong>.</li>
+            <li><strong>2 GROWING</strong> — 어린 클러스터 (알갱이 3~4개), 잎 성장. 알갱이 채도 낮음 (연한 등급 색). 실루엣 높이: MATURE의 <strong>65%</strong>.</li>
+            <li><strong>3 MATURE</strong> — 풍성한 클러스터 (알갱이 7~9개), 잎 3장 + 금색 링, 아우라 최대. 하이라이트 스팟 뚜렷. 이 스프라이트가 "완성형".</li>
+          </ul>
         </div>
 
         <div>
@@ -594,23 +627,45 @@
             <div class="stat"><span class="n">3</span><span class="l">성장 단계</span></div>
             <div class="stat"><span class="n">12</span><span class="l">총 스프라이트</span></div>
           </div>
-          <ul class="concept-list" style="margin-top:18px;">
-            <li><strong>성장 3단계 × 3색</strong> = 9 (SEED / GROWING / MATURE)</li>
-            <li><strong>열매 스프라이트 × 3색</strong> = 3</li>
-            <li>기존 명명 규칙 유지 예:
-              <br><span class="code-inline">plant_prime_grape_1-1.png</span> ~
-              <span class="code-inline">plant_prime_grape_3-3.png</span>,
-              <span class="code-inline">plant_prime_grape_item1~3.png</span>
+
+          <div class="row-label" style="margin-top:20px;">파일 규격</div>
+          <ul class="concept-list">
+            <li><strong>포맷</strong> — PNG, RGBA (알파 유지)</li>
+            <li><strong>사이즈</strong> — 기존 4종과 <strong>동일 픽셀 크기</strong> (참고: 기존 <span class="code-inline">crystal_spine_*.png</span>)</li>
+            <li><strong>Pivot / Anchor</strong> — 하단 중앙 (땅에 심어져 있는 기준)</li>
+            <li><strong>PPU</strong> — 100 (기존 동일)</li>
+            <li><strong>그림자</strong> — 없음 (클라 코드가 열매 뒤 물방울 오버레이를 별도 렌더)</li>
+            <li><strong>배경</strong> — 완전 투명</li>
+          </ul>
+
+          <div class="row-label" style="margin-top:20px;">파일명 규칙</div>
+          <ul class="concept-list">
+            <li>성장:
+              <br><span class="code-inline">plant_prime_grape_1-1.png</span> (SEED · Magic)
+              <br><span class="code-inline">plant_prime_grape_1-2.png</span> (SEED · Rare)
+              <br><span class="code-inline">plant_prime_grape_1-3.png</span> (SEED · Hero)
+              <br><span class="code-inline">plant_prime_grape_2-1</span> ~ <span class="code-inline">2-3</span> (GROWING)
+              <br><span class="code-inline">plant_prime_grape_3-1</span> ~ <span class="code-inline">3-3</span> (MATURE)
+            </li>
+            <li>열매:
+              <br><span class="code-inline">plant_prime_grape_item1.png</span> (Magic)
+              <br><span class="code-inline">plant_prime_grape_item2.png</span> (Rare)
+              <br><span class="code-inline">plant_prime_grape_item3.png</span> (Hero)
             </li>
           </ul>
+
+          <div class="row-label" style="margin-top:20px;">참고 이미지 (톤 매칭)</div>
+          <div style="color:var(--text-dim); font-size:13px;">
+            <strong>상단 섹션의 <span class="code-inline">mystic_berry_cluster</span></strong> — 클러스터 실루엣과 잎 구성 톤이 가장 유사합니다. 알갱이가 세로로 3~4개씩 매달린 포도송이 형태로 변형 + 크라운/아우라 추가하시면 됩니다.
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card" style="margin-top:16px; padding:18px 22px;">
-      <div class="row-label">선택 (등급 컨벤션 통일 시)</div>
+      <div class="row-label">기존 리소스 처리</div>
       <div style="color:var(--text-dim); font-size:14px;">
-        기존 4종의 <strong>색 인덱스 순서</strong>가 Magic → Rare → Hero → Epic 컨벤션과 안 맞으면 색 위치 재정렬 요청. 또는 클라이언트에서 색 인덱스 매핑만 재구성 (리소스 변경 없이 가능).
+        기존 4종은 <strong>현재 색상 유지</strong>. 클라이언트에서 color index → 등급 매핑만 재구성해 대응합니다 (재작업 불필요).
       </div>
     </div>
   </section>
