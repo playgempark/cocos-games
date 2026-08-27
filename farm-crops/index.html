@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farm Crops — 작물 리소스 매핑 계획</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-2: #161b22;
+    --bg-3: #1c2129;
+    --border: #30363d;
+    --border-soft: #21262d;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --text-mute: #6e7681;
+    --acc-blue: #58a6ff;
+    --acc-green: #56d364;
+    --acc-orange: #f0883e;
+    --acc-purple: #a371f7;
+    --acc-pink: #f778ba;
+    --acc-red: #ff7b72;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Sans KR", -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    font-size: 15px;
+    padding-bottom: 80px;
+  }
+  code, .mono { font-family: "JetBrains Mono", ui-monospace, "Consolas", monospace; }
+
+  /* Layout */
+  .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  header {
+    padding: 64px 0 40px;
+    background: radial-gradient(1200px 400px at 20% 0%, rgba(88,166,255,0.10), transparent 60%),
+                radial-gradient(900px 320px at 90% 20%, rgba(163,113,247,0.08), transparent 55%);
+    border-bottom: 1px solid var(--border-soft);
+    margin-bottom: 48px;
+  }
+  header .container { position: relative; }
+  .kicker {
+    display: inline-block;
+    color: var(--acc-blue);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 12px;
+    border: 1px solid rgba(88,166,255,0.35);
+    border-radius: 999px;
+    background: rgba(88,166,255,0.06);
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  h1 span.gradient {
+    background: linear-gradient(90deg, var(--acc-blue), var(--acc-purple));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  header .lead {
+    color: var(--text-dim);
+    font-size: 17px;
+    max-width: 780px;
+  }
+  header .meta {
+    margin-top: 18px;
+    color: var(--text-mute);
+    font-size: 13px;
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  section { margin: 56px 0; }
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+  }
+  h2 .num {
+    color: var(--acc-blue);
+    font-family: "JetBrains Mono", monospace;
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  h2 + .sub {
+    color: var(--text-dim);
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+
+  /* Cards */
+  .card {
+    background: var(--bg-2);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .highlight-card {
+    background: linear-gradient(135deg, rgba(240,136,62,0.10), rgba(240,136,62,0.02));
+    border: 1px solid rgba(240,136,62,0.35);
+  }
+  .highlight-card h3 { color: var(--acc-orange); }
+  .highlight-card h3 .badge {
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 2px 8px;
+    background: var(--acc-orange);
+    color: #1a1000;
+    border-radius: 4px;
+    font-weight: 800;
+    vertical-align: middle;
+  }
+
+  /* Plant showcase */
+  .plants-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .plant-card { padding: 22px; }
+  .plant-card .name-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .plant-card .name-orig {
+    font-family: "JetBrains Mono", monospace;
+    color: var(--text-mute);
+    font-size: 12px;
+  }
+  .plant-card h3 { margin-bottom: 4px; font-size: 20px; }
+  .plant-card .role {
+    color: var(--acc-blue);
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .plant-card .stages, .plant-card .items {
+    display: grid;
+    gap: 10px;
+    align-items: end;
+  }
+  .plant-card .stages {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 14px;
+  }
+  .plant-card .items {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .plant-card .thumb {
+    background: var(--bg-3);
+    border: 1px solid var(--border-soft);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    aspect-ratio: 1 / 1;
+  }
+  .plant-card .thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    image-rendering: pixelated;
+    object-fit: contain;
+  }
+  .plant-card .thumb .caption {
+    font-size: 10px;
+    color: var(--text-mute);
+    margin-top: 4px;
+    letter-spacing: 0.05em;
+  }
+  .plant-card .stages .thumb { aspect-ratio: 1 / 1.1; }
+  .plant-card .row-label {
+    color: var(--text-dim);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  /* Server 17 table */
+  .group-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .group-card { padding: 20px; }
+  .group-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .group-card h3 .tag {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 800;
+  }
+  .tag-A { background: rgba(88,166,255,0.15); color: var(--acc-blue); border: 1px solid rgba(88,166,255,0.4); }
+  .tag-B { background: rgba(86,211,100,0.15); color: var(--acc-green); border: 1px solid rgba(86,211,100,0.4); }
+  .tag-C { background: rgba(163,113,247,0.15); color: var(--acc-purple); border: 1px solid rgba(163,113,247,0.4); }
+  .group-card table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .group-card th, .group-card td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--border-soft); }
+  .group-card th { color: var(--text-mute); font-weight: 500; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .group-card td.id { font-family: "JetBrains Mono", monospace; color: var(--text-mute); font-size: 12px; }
+  .grade { font-size: 11px; padding: 2px 7px; border-radius: 3px; font-weight: 700; letter-spacing: 0.05em; }
+  .g-magic { background: rgba(88,166,255,0.15); color: var(--acc-blue); }
+  .g-rare { background: rgba(163,113,247,0.15); color: var(--acc-purple); }
+  .g-hero { background: rgba(240,136,62,0.15); color: var(--acc-orange); }
+  .g-epic { background: rgba(247,120,186,0.15); color: var(--acc-pink); }
+
+  /* Mapping */
+  .map-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-2);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .map-table th, .map-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 14px;
+  }
+  .map-table thead th {
+    background: var(--bg-3);
+    color: var(--text-dim);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .map-table tr:last-child td { border-bottom: 0; }
+  .map-table .row-new { background: rgba(240,136,62,0.05); }
+  .map-table .new-badge {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 6px;
+    background: var(--acc-orange);
+    color: #1a1000;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+  }
+  .name-new { color: var(--acc-orange); font-weight: 700; }
+  .name { font-weight: 700; }
+  .code-inline { font-family: "JetBrains Mono", monospace; color: var(--text-dim); font-size: 12px; }
+
+  /* Request card */
+  .request-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    background: var(--bg-3);
+    border-radius: 10px;
+    border: 1px solid var(--border-soft);
+  }
+  .stat .n { font-size: 32px; font-weight: 900; color: var(--acc-orange); font-family: "JetBrains Mono", monospace; }
+  .stat .l { color: var(--text-dim); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+  .concept-list {
+    margin-top: 14px;
+    padding-left: 18px;
+  }
+  .concept-list li { margin: 6px 0; color: var(--text-dim); }
+  .concept-list li strong { color: var(--text); }
+
+  /* Grade legend */
+  .legend {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  .legend .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: var(--bg-3);
+    font-size: 12px;
+  }
+  .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    border-top: 1px solid var(--border-soft);
+    color: var(--text-mute);
+    font-size: 12px;
+    text-align: center;
+  }
+  footer a { color: var(--acc-blue); text-decoration: none; }
+
+  @media (max-width: 800px) {
+    .plants-grid { grid-template-columns: 1fr; }
+    .group-grid { grid-template-columns: 1fr; }
+    .request-grid { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="kicker">Design Brief · 2026-08-27</div>
+    <h1>농장 <span class="gradient">작물 리소스</span> 매핑 계획</h1>
+    <p class="lead">서버 17종 열매를 클라이언트 4종×5색 이미지에 매핑하고, 부족한 리소스를 정리한 문서입니다. 디자이너 참고용.</p>
+    <div class="meta">스크립트/데이터: <span class="code-inline">Assets/Farm/CROP_MAPPING_PLAN.md</span></div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- 1. 확보 리소스 -->
+  <section id="assets">
+    <h2><span class="num">01</span>현재 확보된 리소스</h2>
+    <p class="sub">4종의 식물 이미지, 각 3 성장 단계 × 5색 + 5색 열매 = 종당 20 스프라이트 (총 80).</p>
+
+    <div class="plants-grid">
+      <!-- Plant 1 -->
+      <div class="card plant-card">
+        <div class="name-row">
+          <h3>crystal_spine <span class="mono" style="color:var(--text-mute); font-weight:400;">→ Plant_VitaBerry</span></h3>
+        </div>
+        <div class="role">붉은 물방울 체리 · 저LV 경험치 대표 (16001~16003)</div>
+
+        <div class="row-label">Growth Stages (색 1)</div>
+        <div class="stages">
+          <div class="thumb"><img src="img/crystal_spine_1-1.png" alt="stage1"><span class="caption">1 SEED</span></div>
+          <div class="thumb"><img src="img/crystal_spine_2-1.png" alt="stage2"><span class="caption">2 GROWING</span></div>
+          <div class="thumb"><img src="img/crystal_spine_3-1.png" alt="stage3"><span class="caption">3 MATURE</span></div>
+        </div>
+
+        <div class="row-label">Fruits (5색)</div>
+        <div class="items">
+          <div class="thumb"><img src="img/crystal_spine_item1.png"><span class="caption">1</span></div>
+          <div class="thumb"><img src="img/crystal_spine_item2.png"><span class="caption">2</span></div>
+          <div class="thumb"><img src="img/crystal_spine_item3.png"><span class="caption">3</span></div>
+          <div class="thumb"><img src="img/crystal_spine_item4.png"><span class="caption">4</span></div>
+          <div class="thumb"><img src="img/crystal_spine_item5.png"><span class="caption">5</span></div>
+        </div>
+      </div>
+
+      <!-- Plant 2 -->
+      <div class="card plant-card">
+        <div class="name-row">
+          <h3>flux_ob <span class="mono" style="color:var(--text-mute); font-weight:400;">→ Plant_EssenceCore</span></h3>
+        </div>
+        <div class="role">오브 안 코어 · 중LV 경험치 대표 (16004~16006)</div>
+
+        <div class="row-label">Growth Stages (색 1)</div>
+        <div class="stages">
+          <div class="thumb"><img src="img/flux_ob_1-1.png"><span class="caption">1 SEED</span></div>
+          <div class="thumb"><img src="img/flux_ob_2-1.png"><span class="caption">2 GROWING</span></div>
+          <div class="thumb"><img src="img/flux_ob_3-1.png"><span class="caption">3 MATURE</span></div>
+        </div>
+
+        <div class="row-label">Fruits (5색)</div>
+        <div class="items">
+          <div class="thumb"><img src="img/flux_ob_item1.png"><span class="caption">1</span></div>
+          <div class="thumb"><img src="img/flux_ob_item2.png"><span class="caption">2</span></div>
+          <div class="thumb"><img src="img/flux_ob_item3.png"><span class="caption">3</span></div>
+          <div class="thumb"><img src="img/flux_ob_item4.png"><span class="caption">4</span></div>
+          <div class="thumb"><img src="img/flux_ob_item5.png"><span class="caption">5</span></div>
+        </div>
+      </div>
+
+      <!-- Plant 3 -->
+      <div class="card plant-card">
+        <div class="name-row">
+          <h3>lumen_cluster <span class="mono" style="color:var(--text-mute); font-weight:400;">→ Plant_MiracleBloom</span></h3>
+        </div>
+        <div class="role">빛나는 특수 열매 · 옵션변경 대표 (16201~16204)</div>
+
+        <div class="row-label">Growth Stages (색 1)</div>
+        <div class="stages">
+          <div class="thumb"><img src="img/lumen_cluster_1-1.png"><span class="caption">1 SEED</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_2-1.png"><span class="caption">2 GROWING</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_3-1.png"><span class="caption">3 MATURE</span></div>
+        </div>
+
+        <div class="row-label">Fruits (5색)</div>
+        <div class="items">
+          <div class="thumb"><img src="img/lumen_cluster_item1.png"><span class="caption">1</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_item2.png"><span class="caption">2</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_item3.png"><span class="caption">3</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_item4.png"><span class="caption">4</span></div>
+          <div class="thumb"><img src="img/lumen_cluster_item5.png"><span class="caption">5</span></div>
+        </div>
+      </div>
+
+      <!-- Plant 4 -->
+      <div class="card plant-card">
+        <div class="name-row">
+          <h3>mystic_berry_cluster <span class="mono" style="color:var(--text-mute); font-weight:400;">→ Plant_RuneBerry</span></h3>
+        </div>
+        <div class="role">잎 달린 베리 클러스터 · 한계돌파 룬베리 (16101~16104)</div>
+
+        <div class="row-label">Growth Stages (색 1)</div>
+        <div class="stages">
+          <div class="thumb"><img src="img/mystic_berry_cluster_1-1.png"><span class="caption">1 SEED</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_2-1.png"><span class="caption">2 GROWING</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_3-1.png"><span class="caption">3 MATURE</span></div>
+        </div>
+
+        <div class="row-label">Fruits (5색)</div>
+        <div class="items">
+          <div class="thumb"><img src="img/mystic_berry_cluster_item1.png"><span class="caption">1</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_item2.png"><span class="caption">2</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_item3.png"><span class="caption">3</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_item4.png"><span class="caption">4</span></div>
+          <div class="thumb"><img src="img/mystic_berry_cluster_item5.png"><span class="caption">5</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 서버 17종 -->
+  <section id="server">
+    <h2><span class="num">02</span>서버 17종 열매 카탈로그</h2>
+    <p class="sub">3그룹 구조: 펫 경험치 (9종) · 한계돌파 룬베리 (4종) · 옵션 변경 (4종).</p>
+
+    <div class="group-grid">
+      <div class="card group-card">
+        <h3><span class="tag tag-A">A</span> 펫 경험치 · 9종</h3>
+        <table>
+          <thead><tr><th>id</th><th>이름</th><th>등급</th><th>LV</th></tr></thead>
+          <tbody>
+            <tr><td class="id">14001</td><td>비타 베리</td><td><span class="grade g-magic">Magic</span></td><td class="id">0~49</td></tr>
+            <tr><td class="id">14002</td><td>루키 애플</td><td><span class="grade g-rare">Rare</span></td><td class="id">0~49</td></tr>
+            <tr><td class="id">14003</td><td>프레시 체리</td><td><span class="grade g-hero">Hero</span></td><td class="id">0~49</td></tr>
+            <tr><td class="id">14004</td><td>에센스 프룻</td><td><span class="grade g-magic">Magic</span></td><td class="id">50~79</td></tr>
+            <tr><td class="id">14005</td><td>액티브 멜론</td><td><span class="grade g-rare">Rare</span></td><td class="id">50~79</td></tr>
+            <tr><td class="id">14006</td><td>코어 시트러스</td><td><span class="grade g-hero">Hero</span></td><td class="id">50~79</td></tr>
+            <tr><td class="id">14007</td><td>프라임 그레이프</td><td><span class="grade g-magic">Magic</span></td><td class="id">80~99</td></tr>
+            <tr><td class="id">14008</td><td>엘리트 망고</td><td><span class="grade g-rare">Rare</span></td><td class="id">80~99</td></tr>
+            <tr><td class="id">14009</td><td>솔리드 피치</td><td><span class="grade g-hero">Hero</span></td><td class="id">80~99</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card group-card">
+        <h3><span class="tag tag-B">B</span> 한계돌파 룬베리 · 4종</h3>
+        <table>
+          <thead><tr><th>id</th><th>이름</th><th>등급</th></tr></thead>
+          <tbody>
+            <tr><td class="id">15001</td><td>노비스 룬 베리</td><td><span class="grade g-magic">Magic</span></td></tr>
+            <tr><td class="id">15002</td><td>엑스퍼트 룬 베리</td><td><span class="grade g-rare">Rare</span></td></tr>
+            <tr><td class="id">15003</td><td>마스터 룬 베리</td><td><span class="grade g-hero">Hero</span></td></tr>
+            <tr><td class="id">15004</td><td>그랜드 룬 베리</td><td><span class="grade g-epic">Epic</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card group-card">
+        <h3><span class="tag tag-C">C</span> 옵션 변경 · 4종</h3>
+        <table>
+          <thead><tr><th>id</th><th>이름</th><th>등급</th></tr></thead>
+          <tbody>
+            <tr><td class="id">15011</td><td>뮤턴트 시드</td><td><span class="grade g-magic">Magic</span></td></tr>
+            <tr><td class="id">15012</td><td>카오스 젤리 프룻</td><td><span class="grade g-rare">Rare</span></td></tr>
+            <tr><td class="id">15013</td><td>미라클 블로섬</td><td><span class="grade g-hero">Hero</span></td></tr>
+            <tr><td class="id">15014</td><td>파라다임 프룻</td><td><span class="grade g-epic">Epic</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div class="item"><span class="dot" style="background:var(--acc-blue)"></span>Magic (색 인덱스 0)</div>
+      <div class="item"><span class="dot" style="background:var(--acc-purple)"></span>Rare (색 인덱스 1)</div>
+      <div class="item"><span class="dot" style="background:var(--acc-orange)"></span>Hero (색 인덱스 2)</div>
+      <div class="item"><span class="dot" style="background:var(--acc-pink)"></span>Epic (색 인덱스 3)</div>
+    </div>
+  </section>
+
+  <!-- 3. 매핑안 -->
+  <section id="mapping">
+    <h2><span class="num">03</span>매핑안</h2>
+    <p class="sub">기존 4종 재활용 + <strong style="color:var(--acc-orange)">Plant_PrimeGrape (고LV) 하나만 신규 요청</strong>.</p>
+
+    <table class="map-table">
+      <thead>
+        <tr><th>클라 종 (새 이름)</th><th>기존 이미지</th><th>서버 그룹</th><th>사용 색상</th><th>cropId</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Plant_VitaBerry</td>
+          <td class="code-inline">crystal_spine</td>
+          <td>A · 저LV (0~49)</td>
+          <td>색 0~2 <span class="grade g-magic">M</span> <span class="grade g-rare">R</span> <span class="grade g-hero">H</span></td>
+          <td class="code-inline">16001~3</td>
+        </tr>
+        <tr>
+          <td class="name">Plant_EssenceCore</td>
+          <td class="code-inline">flux_ob</td>
+          <td>A · 중LV (50~79)</td>
+          <td>색 0~2 <span class="grade g-magic">M</span> <span class="grade g-rare">R</span> <span class="grade g-hero">H</span></td>
+          <td class="code-inline">16004~6</td>
+        </tr>
+        <tr class="row-new">
+          <td class="name-new">Plant_PrimeGrape<span class="new-badge">NEW</span></td>
+          <td class="code-inline" style="color:var(--acc-orange)">신규 요청</td>
+          <td>A · 고LV (80~99)</td>
+          <td>색 0~2 <span class="grade g-magic">M</span> <span class="grade g-rare">R</span> <span class="grade g-hero">H</span></td>
+          <td class="code-inline">16007~9</td>
+        </tr>
+        <tr>
+          <td class="name">Plant_RuneBerry</td>
+          <td class="code-inline">mystic_berry_cluster</td>
+          <td>B · 한계돌파</td>
+          <td>색 0~3 <span class="grade g-magic">M</span> <span class="grade g-rare">R</span> <span class="grade g-hero">H</span> <span class="grade g-epic">E</span></td>
+          <td class="code-inline">16101~4</td>
+        </tr>
+        <tr>
+          <td class="name">Plant_MiracleBloom</td>
+          <td class="code-inline">lumen_cluster</td>
+          <td>C · 옵션변경</td>
+          <td>색 0~3 <span class="grade g-magic">M</span> <span class="grade g-rare">R</span> <span class="grade g-hero">H</span> <span class="grade g-epic">E</span></td>
+          <td class="code-inline">16201~4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 4. 신규 요청 -->
+  <section id="request">
+    <h2><span class="num">04</span>디자이너 신규 리소스 요청</h2>
+    <p class="sub">A그룹 고LV용 <strong>Plant_PrimeGrape</strong> 한 종. 아래 스펙 참고.</p>
+
+    <div class="card highlight-card">
+      <h3>Plant_PrimeGrape <span class="badge">1 종 · 12 스프라이트</span></h3>
+      <div class="request-grid">
+        <div>
+          <div class="row-label">컨셉</div>
+          <ul class="concept-list">
+            <li><strong>포지션</strong> — 고레벨(LV 80~99) 경험치 열매 시리즈의 대표 (프라임 그레이프 · 엘리트 망고 · 솔리드 피치).</li>
+            <li><strong>비주얼</strong> — 저·중LV보다 확실히 <strong>화려하고 풍성한 클러스터</strong> 느낌. 등급감·희귀도가 시각적으로 드러날 것.</li>
+            <li><strong>등급 표현</strong> — Magic / Rare / Hero 세 등급을 색상만으로 구분 (형태는 동일). 색상은 아래 컨벤션 참고.</li>
+            <li><strong>스타일 매칭</strong> — 기존 4종과 동일한 pixel-art / cel-shaded 톤. 크기·앵커도 기존 스프라이트 기준.</li>
+          </ul>
+
+          <div class="row-label" style="margin-top:16px;">등급-색상 컨벤션 (권장)</div>
+          <div class="legend">
+            <div class="item"><span class="dot" style="background:var(--acc-blue)"></span>Magic — 파랑 톤</div>
+            <div class="item"><span class="dot" style="background:var(--acc-purple)"></span>Rare — 보라 톤</div>
+            <div class="item"><span class="dot" style="background:var(--acc-orange)"></span>Hero — 주황/금 톤</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="row-label">필요 스프라이트</div>
+          <div class="stat-row">
+            <div class="stat"><span class="n">3</span><span class="l">등급 색상</span></div>
+            <div class="stat"><span class="n">3</span><span class="l">성장 단계</span></div>
+            <div class="stat"><span class="n">12</span><span class="l">총 스프라이트</span></div>
+          </div>
+          <ul class="concept-list" style="margin-top:18px;">
+            <li><strong>성장 3단계 × 3색</strong> = 9 (SEED / GROWING / MATURE)</li>
+            <li><strong>열매 스프라이트 × 3색</strong> = 3</li>
+            <li>기존 명명 규칙 유지 예:
+              <br><span class="code-inline">plant_prime_grape_1-1.png</span> ~
+              <span class="code-inline">plant_prime_grape_3-3.png</span>,
+              <span class="code-inline">plant_prime_grape_item1~3.png</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px; padding:18px 22px;">
+      <div class="row-label">선택 (등급 컨벤션 통일 시)</div>
+      <div style="color:var(--text-dim); font-size:14px;">
+        기존 4종의 <strong>색 인덱스 순서</strong>가 Magic → Rare → Hero → Epic 컨벤션과 안 맞으면 색 위치 재정렬 요청. 또는 클라이언트에서 색 인덱스 매핑만 재구성 (리소스 변경 없이 가능).
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div>Farm Crop Mapping · <span class="code-inline">playgempark/cocos-games/farm-crops</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
